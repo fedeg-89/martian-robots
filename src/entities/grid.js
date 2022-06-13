@@ -18,12 +18,12 @@ const makeGrid = ({ x, y }) => {
       }`
     )
 
-  return {
+  return Object.freeze({
     x,
     y,
     robotsCoords: [],
     scents: []
-  }
+  })
 }
 
 export default makeGrid
