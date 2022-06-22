@@ -1,4 +1,4 @@
-import { MIN_GRID_COORD } from '../../grid/buildMakeGrid'
+import { MIN_GRID_COORD } from '../../grid'
 
 const validateRobotCord = ({ coord, coordName, gridCoord }) => {
   if (coord === null || coord === undefined)
