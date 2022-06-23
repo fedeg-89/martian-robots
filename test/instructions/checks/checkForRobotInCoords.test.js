@@ -9,7 +9,7 @@ const grid = {
 
 const checkForRobotInCoords = buildCheckForRobotInCoords({ grid })
 
-describe('checks for a robot in destiny coords', () => {
+describe.skip('checks for a robot in destiny coords', () => {
   it('robot found in coords', () => {
     const coords = { x: 8, y: 3 }
     let robotFound = checkForRobotInCoords({ coords })
