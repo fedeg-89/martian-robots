@@ -24,7 +24,7 @@ export const MOVES = {
 
 const buildGetInstruction =
   ({ grid }) =>
-  ({ instruction }) => {
+  ({ instructionCode }) => {
     const checkForScent = buildCheckForScent({ grid })
     const checkOutOfGrid = buildCheckOutOfGrid({ grid })
     const checkForRobotInCoords = buildCheckForRobotInCoords({ grid })
@@ -41,7 +41,7 @@ const buildGetInstruction =
       })
     }
 
-    const execInstruction = instructions[instruction]
+    const execInstruction = instructions[instructionCode]
 
     if (!execInstruction)
       return new InstructionError({ code: 'NO_INSTRUCTION' })
