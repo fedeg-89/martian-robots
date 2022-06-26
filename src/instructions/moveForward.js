@@ -10,7 +10,7 @@ const buildMoveForward =
 
     const newCoords = MOVES[robot.orientation](robot.coords)
 
-    const robotInCoord = checkForRobotInCoords({ newCoords })
+    const robotInCoord = checkForRobotInCoords({ coords: newCoords })
     if (robotInCoord) return
 
     const robotOutOfGrid = checkOutOfGrid({ coords: newCoords })

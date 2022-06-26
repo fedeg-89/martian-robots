@@ -1,7 +1,7 @@
 import buildMakeGrid from './buildMakeGrid.js'
 import validateGrid from './validations'
 
-export const MIN_GRID_COORD = 1
+export const MIN_GRID_COORD = 0
 export const MAX_GRID_COORD = 50
 
 const makeGrid = buildMakeGrid({ validateGrid })
