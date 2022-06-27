@@ -1,6 +1,6 @@
-import makeGrid from './entities/grid'
-import makeRobot from './entities/robot'
-import buildGetInstruction from './instructions'
+import makeGrid from '../entities/grid'
+import makeRobot from '../entities/robot'
+import buildGetInstruction from '../instructions'
 
 const launchMission = ({ gridCoords, robotsInput }) => {
   const grid = makeGrid({ ...gridCoords })

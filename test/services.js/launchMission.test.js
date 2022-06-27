@@ -1,5 +1,5 @@
-import launchMission from '../src/launchMission'
-import examples from './__mocks__/exampleInput'
+import launchMission from '../../src/services/launchMission'
+import examples from '../__mocks__/exampleInput'
 const { gridCoords, robotsInput } = examples
 
 it('launch robots to mars', () => {

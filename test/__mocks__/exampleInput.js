@@ -36,4 +36,41 @@ FRRFLLFFRRFLL
 0 3 W
 LLFFFRFLFL`
 
-export default { gridCoords, robotsInput, exampleInput }
+const missionResult = [
+  {
+    coords: {
+      x: 1,
+      y: 1
+    },
+    orientation: 'E',
+    lost: false
+  },
+  {
+    coords: {
+      x: 3,
+      y: 3
+    },
+    orientation: 'N',
+    lost: true
+  },
+  {
+    coords: {
+      x: 4,
+      y: 2
+    },
+    orientation: 'N',
+    lost: false
+  }
+]
+
+const expectedOutput = `1 1 E
+3 3 N LOST
+4 2 N`
+
+export default {
+  gridCoords,
+  robotsInput,
+  exampleInput,
+  missionResult,
+  expectedOutput
+}
