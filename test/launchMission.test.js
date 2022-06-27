@@ -1,34 +1,6 @@
 import launchMission from '../src/launchMission'
-
-const gridCoords = { x: 5, y: 3 }
-const robotsInput = [
-  {
-    position: { coords: { x: 1, y: 1 }, orientation: 'E' },
-    inputInstructions: ['R', 'F', 'R', 'F', 'R', 'F', 'R', 'F']
-  },
-  {
-    position: { coords: { x: 3, y: 2 }, orientation: 'N' },
-    inputInstructions: [
-      'F',
-      'R',
-      'R',
-      'F',
-      'L',
-      'L',
-      'F',
-      'F',
-      'R',
-      'R',
-      'F',
-      'L',
-      'L'
-    ]
-  },
-  {
-    position: { coords: { x: 0, y: 3 }, orientation: 'W' },
-    inputInstructions: ['L', 'L', 'F', 'F', 'F', 'R', 'F', 'L', 'F', 'L']
-  }
-]
+import examples from './__mocks__/exampleInput'
+const { gridCoords, robotsInput } = examples
 
 it('launch robots to mars', () => {
   const result = launchMission({ gridCoords, robotsInput })
