@@ -1,9 +1,9 @@
-import formatGridCoords from './formatGridCoords'
-import formatRobotInstructions from './formatRobotInstructions'
-import formatRobotPosition from './formatRobotPosition'
+import formatGridCoords from './formatGridCoords.js'
+import formatRobotInstructions from './formatRobotInstructions.js'
+import formatRobotPosition from './formatRobotPosition.js'
 
 const formatLaunchMissionInput = (input) => {
-  const inputLines = input.split(/\r?\n/g)
+  const inputLines = input.split(/\n\r?/g)
   const gridCoords = formatGridCoords(inputLines[0])
   const robotsInput = []
 
